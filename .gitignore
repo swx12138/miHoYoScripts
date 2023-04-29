@@ -1,0 +1,10 @@
+
+GenshinData/
+FromHoney/
+data/
+UserData/
+GachaData/
+predict/
+**/__pycache__
+words.xlsx
+logcat/
