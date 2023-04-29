@@ -1,4 +1,3 @@
-
 # -- coding: utf-8 --
 
 import json
@@ -80,7 +79,7 @@ class GachaLogContext(object):
                 isInsise, pos = item_in_data(tempory_data[-1], self._LocalData)
                 if isInsise:
                     repeat_len = pos
-                self._LocalData = tempory_data + self._LocalData[repeat_len+1:]
+                self._LocalData = tempory_data + self._LocalData[repeat_len + 1:]
                 print(f"update succeed.  total:{len(self._LocalData)}, new:{len(tempory_data)-repeat_len-1}")
             else:
                 self._LocalData = tempory_data
@@ -125,4 +124,4 @@ if __name__ == "__main__":
     for ty in all_fives.keys():
         print(gacha_type[ty])
         for five in all_fives[ty]:
-            print(five)
+            print("\t", five)
